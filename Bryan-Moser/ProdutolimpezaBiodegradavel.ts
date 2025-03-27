@@ -1,6 +1,7 @@
 import { ProdutoEcologico } from "./ProdutoEcologico";
 
 export class ProdutoLimpezaBiodegradavel implements ProdutoEcologico {
+   
     nome: string;
     preco: number;
     volume: number;
@@ -9,5 +10,11 @@ export class ProdutoLimpezaBiodegradavel implements ProdutoEcologico {
         this.nome = nome;
         this.preco = preco;
         this.volume = volume;
+    } 
+    exibirDetalhes(): void {
+        console.log(`nome: ${this.nome}, preco: ${this.preco}, volume: ${this.volume}`);
     }
+
+
+
 }
